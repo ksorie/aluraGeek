@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2>AluraGeek</h2>
+    </header>
+    <h2 class="h2-product">Mis Productos</h2>
+    <main class="main-container">   
+        <section class="menu-product" data-product>
+            <!--h2>Mis Productos</!--h2>-->
+            <div class="product-grid">
+                    <div class="product-card">
+                        <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
+                    </div>    
+                    <div class="card-container-info">
+                        <p>Stormtrooper</p>
+                        <div class="price-items">
+                            <p>$ 60.00</p>
+                            <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
+                        </div>
+                    </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
+                </div>    
+                <div class="card-container-info">
+                    <p>Stormtrooper</p>
+                    <div class="price-items">
+                        <p>$ 60.00</p>
+                        <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
+                    </div>
+                </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
+            </div>    
+            <div class="card-container-info">
+                <p>Stormtrooper</p>
+                <div class="price-items">
+                    <p>$ 60.00</p>
+                    <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
+                </div>
+            </div>
+    </div>
+        </section>
+        <section class="add-product">
+            <form class="form" action="" method="post">
+                <div >
+                    <h3 class="title">Agregar productos </h3>
+                    <div class="inputGroup">
+                        <label for="text" class="label">Nombre del producto</label>
+                        <input type="text" name="product" id="add-product" class=" add-product input" placeholder="Ingresa el producto" required>
+                        
+                        <label for="pricer" class="label">Precio del producto</label>
+                        <input type="number" name="number" id="number" class="number input" placeholder="Ingrese precio" required>
+                        
+                        <label for="image" class="label">Agregue Imagen</label>
+                        <input type="text" name="image" id="image" class="image input" placeholder="" required>
+                        
+                        <div class="bottons">
+                            <button type="submit" class="submit">Enviar</button>
+                            <button type="reset" class="reset">Limpiar</button>
+                        </div>
+                    </div>
+                    
+                        
+                </div>
+                
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: Kensy Soriano</p>
+    </footer>
+</body>
+</html>
