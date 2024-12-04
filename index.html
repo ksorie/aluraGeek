@@ -14,7 +14,8 @@
     <main class="main-container">   
         <section class="menu-product" data-product>
             <!--h2>Mis Productos</!--h2>-->
-            <div class="product-grid">
+                
+                <!--div class="product-grid">
                     <div class="product-card">
                         <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
                     </div>    
@@ -24,9 +25,12 @@
                             <p>$ 60.00</p>
                             <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
                         </div>
-                    </div>
-            </div>
-            <div class="product-grid">
+                </div>-->
+                
+                
+            
+            
+            <!--div class="product-grid">
                 <div class="product-card">
                     <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
                 </div>    
@@ -37,7 +41,7 @@
                         <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
                     </div>
                 </div>
-        </div>
+        </!--div>
         <div class="product-grid">
             <div class="product-card">
                 <img src="/img/71F6Esq--RL.jpg" alt="Imagen product" class="img-product">
@@ -49,21 +53,21 @@
                     <button class="delete-button" data-id="${id}" ><img src="/img/icons8-trash-26.png" alt="Delete" class="img-delete"></button>
                 </div>
             </div>
-    </div>
+    </div>-->
         </section>
         <section class="add-product">
-            <form class="form" action="" method="post">
-                <div >
+            <form class="form" action="" method="post" data-form>
+                <div>
                     <h3 class="title">Agregar productos </h3>
                     <div class="inputGroup">
                         <label for="text" class="label">Nombre del producto</label>
-                        <input type="text" name="product" id="add-product" class=" add-product input" placeholder="Ingresa el producto" required>
+                        <input type="text" name="product" id="add-product" class=" add-product input" placeholder="Ingresa el producto" required data-name>
                         
                         <label for="pricer" class="label">Precio del producto</label>
-                        <input type="number" name="number" id="number" class="number input" placeholder="Ingrese precio" required>
+                        <input type="number" name="number" id="number" class="number input" placeholder="Ingrese precio" required data-price>
                         
                         <label for="image" class="label">Agregue Imagen</label>
-                        <input type="text" name="image" id="image" class="image input" placeholder="" required>
+                        <input type="text" name="image" id="image" class="image input" placeholder="" required data-image>
                         
                         <div class="bottons">
                             <button type="submit" class="submit">Enviar</button>
@@ -81,5 +85,6 @@
     <footer>
         <p>Desarrollado por: Kensy Soriano</p>
     </footer>
+    <script type="module" src="/js/services/controllers/main.js"></script>
 </body>
 </html>
